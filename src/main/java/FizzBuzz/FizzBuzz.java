@@ -1,9 +1,9 @@
 package FizzBuzz;
-public class Main {
-    public static void main(String ... args){
-        for (int i=1; i<=105; i++){
-            String res="";
-            if(i%3==0){
+public class FizzBuzz{
+    public static void main(String ... args) {
+/*       for (int i=1; i<=105; i++){
+          String res="";
+    if(i%3==0){
                 res+="Fizz";
             }
             if (i%5==0){
@@ -14,5 +14,9 @@ public class Main {
             }
             System.out.println(res.isEmpty()? i: res);
         }
+     } */
+    }
+    public String convert(int number) {
+        return "1";
     }
 }
