@@ -11,15 +11,19 @@ public class FizzBuzz {
     }
 
     public String numberToFizzBuzz(int number) {
-        if (number % 15 == 0) {
+        if (IsMultipleOf(number, 15)) {
             return "FizzBuzz";
-        } else if (number % 5 == 0) {
+        } else if (IsMultipleOf(number, 5)) {
             return "Buzz";
-        } else if (number % 3 == 0) {
+        } else if (IsMultipleOf(number, 3)) {
             return "Fizz";
         } else {
             return Integer.toString(number);
         }
+    }
+
+    private boolean IsMultipleOf(int number, int divisor) {
+        return number % divisor == 0;
     }
 
     public void generateAndPrintFizzBuzzes() {
