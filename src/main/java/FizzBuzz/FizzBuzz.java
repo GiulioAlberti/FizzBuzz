@@ -10,7 +10,7 @@ public class FizzBuzz {
 
     }
 
-    public String convert(int number) {
+    public String numberToFizzBuzz(int number) {
         if (number % 15 == 0) {
             return "FizzBuzz";
         } else if (number % 5 == 0) {
@@ -22,8 +22,8 @@ public class FizzBuzz {
         }
     }
 
-    public void print() {
-        Stream<String> fizzBuzzes = IntStream.range(1, 101).mapToObj(this::convert);
+    public void generateAndPrintFizzBuzzes() {
+        Stream<String> fizzBuzzes = IntStream.range(1, 101).mapToObj(this::numberToFizzBuzz);
         System.out.println(fizzBuzzes.collect(Collectors.joining(", ")));
     }
 }
